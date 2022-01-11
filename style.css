@@ -62,7 +62,7 @@ body {
   background-color: #f2f2f2;
 }
 
-/* Navigation */
+/* header */
 .size-nav {
   height: auto;
 }
@@ -79,15 +79,9 @@ body {
 .color-lien2 {
   color: black;
 }
-.bordure-nav {
-  border-top: 1px solid transparent;
-}
 .bordure-nav:hover {
   border-top: 1px solid #0065fc;
   cursor: pointer;
-}
-.bordure-nav:hover > a {
-  color: #0065fc;
 }
 .marg-logo {
   margin-bottom: 7px;
@@ -399,25 +393,6 @@ body {
 }
 
 /* responsive */
-@media screen and (max-width: 1295px) {
-  .size-lien12 {
-    margin-left: 35%;
-  }
-  .cube-details-hebergements {
-    min-height: 150px;
-  }
-  .size-hebergements {
-    min-height: auto;
-    padding: 20px;
-  }
-  .size-populaires {
-    min-height: auto;
-    padding: 20px;
-  }
-  .tablette-size-titre-pop {
-    margin-top: 0;
-  }
-}
 @media screen and (max-width: 992px) {
   .mobile-filtre-wrap {
     flex-direction: column;
@@ -484,6 +459,7 @@ body {
   .cube-activites2356 {
     margin-bottom: 50px;
   }
+  /*meme taille images activites */
   .img-activites1,
   .img-activites2,
   .img-activites3,
@@ -500,5 +476,86 @@ body {
   }
   .marge-bloc-foot1 {
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header{
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-titre-para {
+    padding-left: 5%;
+    display: block;
+    margin: auto;
+  }
+  .size-lien12 {
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0;
+    flex-wrap: wrap;
+  } 
+  .size-liens {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .size-lien-mobile {
+    width: 50%;
+    border-top: 0;
+    border-bottom: 5px solid #f2f2f2;
+  }
+  .size-lien-mobile:hover {
+    border-top: 0;
+    border-bottom: 5px solid #0065fc;
+  }
+  .bordure-search {
+    width: auto;
+    border: none;
+  }
+  .recherche {
+    width: 200px;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+  }
+  .button-search {
+    width: 50px;
+    border-radius: 15px;
+  }
+  .desktop-none {
+    display: block;
+  }
+  .mobile-none {
+    display: none;
+  }
+  .marg-filtre {
+    padding-left: 5%;
+  }
+  .mobile-economiques {
+    margin-right: 5px;
+  }
+  .mobile-familiales {
+    margin-right: 0;
+  }
+  .filtre-texte {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .info {
+    padding-left: 5%;
+  }
+  .bloc-populaires {
+    border-radius: 0;
+  }
+  .bloc-hebergements {
+    background-color: white;
+  }
+  .bloc-activites {
+    padding: 5%;
+    width: 90%;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
   }
 }
